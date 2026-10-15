@@ -2,6 +2,89 @@
 
 lockfile_version = 3
 
+[[tools.actionlint]]
+version = "1.7.12"
+backend = "aqua:rhysd/actionlint"
+specifiers = [
+    "1.7.12",
+    "latest",
+]
+
+[tools.actionlint."platforms.linux-arm64"]
+checksum = "sha256:325e971b6ba9bfa504672e29be93c24981eeb1c07576d730e9f7c8805afff0c6"
+url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924897"
+provenance = "github-attestations"
+
+[tools.actionlint."platforms.linux-arm64-musl"]
+checksum = "sha256:325e971b6ba9bfa504672e29be93c24981eeb1c07576d730e9f7c8805afff0c6"
+url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924897"
+provenance = "github-attestations"
+
+[tools.actionlint."platforms.linux-x64"]
+checksum = "sha256:8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8"
+url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924896"
+provenance = "github-attestations"
+
+[tools.actionlint."platforms.linux-x64-musl"]
+checksum = "sha256:8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8"
+url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924896"
+provenance = "github-attestations"
+
+[tools.actionlint."platforms.macos-arm64"]
+checksum = "sha256:aba9ced2dee8d27fecca3dc7feb1a7f9a52caefa1eb46f3271ea66b6e0e6953f"
+url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924893"
+provenance = "github-attestations"
+
+[tools.actionlint."platforms.macos-x64"]
+checksum = "sha256:5b44c3bc2255115c9b69e30efc0fecdf498fdb63c5d58e17084fd5f16324c644"
+url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924880"
+provenance = "github-attestations"
+
+[tools.actionlint."platforms.windows-x64"]
+checksum = "sha256:6e7241b51e6817ea6a047693d8e6fed13b31819c9a0dd6c5a726e1592d22f6e9"
+url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_windows_amd64.zip"
+url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924919"
+provenance = "github-attestations"
+
+[[tools.checkov]]
+version = "3.3.29"
+backend = "aqua:bridgecrewio/checkov"
+specifiers = [
+    "3.3.29",
+    "latest",
+]
+
+[tools.checkov."platforms.linux-x64"]
+checksum = "sha256:0d5a1b91abcbca2829ed760a4b7977fab4c88882a65b511423c7ee6b1b10a840"
+url = "https://github.com/bridgecrewio/checkov/releases/download/3.3.29/checkov_linux_X86_64.zip"
+url_api = "https://api.github.com/repos/bridgecrewio/checkov/releases/assets/638506814"
+
+[tools.checkov."platforms.linux-x64-musl"]
+checksum = "sha256:0d5a1b91abcbca2829ed760a4b7977fab4c88882a65b511423c7ee6b1b10a840"
+url = "https://github.com/bridgecrewio/checkov/releases/download/3.3.29/checkov_linux_X86_64.zip"
+url_api = "https://api.github.com/repos/bridgecrewio/checkov/releases/assets/638506814"
+
+[tools.checkov."platforms.macos-arm64"]
+checksum = "sha256:e1575a31dadd0b40a9845a8174a9d77293802b55c71957e8789f7b78368a688a"
+url = "https://github.com/bridgecrewio/checkov/releases/download/3.3.29/checkov_darwin_X86_64.zip"
+url_api = "https://api.github.com/repos/bridgecrewio/checkov/releases/assets/638508656"
+
+[tools.checkov."platforms.macos-x64"]
+checksum = "sha256:e1575a31dadd0b40a9845a8174a9d77293802b55c71957e8789f7b78368a688a"
+url = "https://github.com/bridgecrewio/checkov/releases/download/3.3.29/checkov_darwin_X86_64.zip"
+url_api = "https://api.github.com/repos/bridgecrewio/checkov/releases/assets/638508656"
+
+[tools.checkov."platforms.windows-x64"]
+checksum = "sha256:b99cd4cb9f890e478a1b733688a46a89d69c06bf72944f42dae8a89235c14fbd"
+url = "https://github.com/bridgecrewio/checkov/releases/download/3.3.29/checkov_windows_X86_64.zip"
+url_api = "https://api.github.com/repos/bridgecrewio/checkov/releases/assets/638514308"
+
 [[tools.go]]
 version = "1.27.1"
 backend = "core:go"
@@ -38,7 +121,10 @@ url = "https://dl.google.com/go/go1.27.1.windows-amd64.zip"
 [[tools.golangci-lint]]
 version = "2.14.0"
 backend = "aqua:golangci/golangci-lint"
-specifiers = ["latest"]
+specifiers = [
+    "2.14.0",
+    "latest",
+]
 
 [tools.golangci-lint."platforms.linux-arm64"]
 checksum = "sha256:ee7ec5f3453d15ddf106fae5a4d6c71737712348a979d1fe9cd52ec7ea299bae"
@@ -81,3 +167,129 @@ checksum = "sha256:b15f903d1649283a2ab6e8d2f0c317eaf1f9f6b3763950e7e8b7e72a43dd7
 url = "https://github.com/golangci/golangci-lint/releases/download/v2.14.0/golangci-lint-2.14.0-windows-amd64.zip"
 url_api = "https://api.github.com/repos/golangci/golangci-lint/releases/assets/585813793"
 provenance = "github-attestations"
+
+[[tools.infracost]]
+version = "0.10.46"
+backend = "aqua:infracost/infracost"
+specifiers = [
+    "0.10.46",
+    "latest",
+]
+
+[tools.infracost."platforms.linux-arm64"]
+checksum = "sha256:acd693c7d001fef44787bc5de65fffcb25bf5445885fd1da98a7b31281e32b43"
+url = "https://github.com/infracost/infracost/releases/download/v0.10.46/infracost-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/infracost/infracost/releases/assets/588060587"
+
+[tools.infracost."platforms.linux-arm64-musl"]
+checksum = "sha256:acd693c7d001fef44787bc5de65fffcb25bf5445885fd1da98a7b31281e32b43"
+url = "https://github.com/infracost/infracost/releases/download/v0.10.46/infracost-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/infracost/infracost/releases/assets/588060587"
+
+[tools.infracost."platforms.linux-x64"]
+checksum = "sha256:d0d081cd39b07b2ca5c315830bfc4bcdfb0183b04c19cb18835c154482a2c97b"
+url = "https://github.com/infracost/infracost/releases/download/v0.10.46/infracost-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/infracost/infracost/releases/assets/588060588"
+
+[tools.infracost."platforms.linux-x64-musl"]
+checksum = "sha256:d0d081cd39b07b2ca5c315830bfc4bcdfb0183b04c19cb18835c154482a2c97b"
+url = "https://github.com/infracost/infracost/releases/download/v0.10.46/infracost-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/infracost/infracost/releases/assets/588060588"
+
+[tools.infracost."platforms.macos-arm64"]
+checksum = "sha256:09fa73ecdc762c1b557df70234eb44cc446a9a9e412a4ab326185cac3f39e631"
+url = "https://github.com/infracost/infracost/releases/download/v0.10.46/infracost-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/infracost/infracost/releases/assets/588060585"
+
+[tools.infracost."platforms.macos-x64"]
+checksum = "sha256:16f9d48469fcbc5e8133f10dca54cd34f15487f1da331c1be579cc8d80d9c3dc"
+url = "https://github.com/infracost/infracost/releases/download/v0.10.46/infracost-darwin-amd64.tar.gz"
+url_api = "https://api.github.com/repos/infracost/infracost/releases/assets/588060590"
+
+[tools.infracost."platforms.windows-x64"]
+checksum = "sha256:a915a576167d0138089ec2e9d0ff2a783a114580808cff2b573e42e1088e7929"
+url = "https://github.com/infracost/infracost/releases/download/v0.10.46/infracost-windows-amd64.tar.gz"
+url_api = "https://api.github.com/repos/infracost/infracost/releases/assets/588060664"
+
+[[tools.kubeconform]]
+version = "0.8.0"
+backend = "aqua:yannh/kubeconform"
+specifiers = [
+    "0.8.0",
+    "latest",
+]
+
+[tools.kubeconform."platforms.linux-arm64"]
+checksum = "sha256:1f53fc8e81258197a35e8603054162a5af1de8c5af13746c71ab680d9534ed87"
+url = "https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/yannh/kubeconform/releases/assets/438612685"
+
+[tools.kubeconform."platforms.linux-arm64-musl"]
+checksum = "sha256:1f53fc8e81258197a35e8603054162a5af1de8c5af13746c71ab680d9534ed87"
+url = "https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/yannh/kubeconform/releases/assets/438612685"
+
+[tools.kubeconform."platforms.linux-x64"]
+checksum = "sha256:9bc2bffbf71f261128533edaf912153948b7ff238f9a531ae6d34466ec287883"
+url = "https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/yannh/kubeconform/releases/assets/438612666"
+
+[tools.kubeconform."platforms.linux-x64-musl"]
+checksum = "sha256:9bc2bffbf71f261128533edaf912153948b7ff238f9a531ae6d34466ec287883"
+url = "https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/yannh/kubeconform/releases/assets/438612666"
+
+[tools.kubeconform."platforms.macos-arm64"]
+checksum = "sha256:f84f4dfbebf4a6b0b230385fa065a39ea35e02608c2b50d025dcf64775a69d67"
+url = "https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/yannh/kubeconform/releases/assets/438612680"
+
+[tools.kubeconform."platforms.macos-x64"]
+checksum = "sha256:71dbc87ac9f24099a62b93570e65aa06312ba6ac8aea63b7f86e9d999edf5a92"
+url = "https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-darwin-amd64.tar.gz"
+url_api = "https://api.github.com/repos/yannh/kubeconform/releases/assets/438612679"
+
+[tools.kubeconform."platforms.windows-x64"]
+checksum = "sha256:e3f56102bcf4f50b034a567e2482a1c5330799983ddd655952310211aef73d93"
+url = "https://github.com/yannh/kubeconform/releases/download/v0.8.0/kubeconform-windows-amd64.zip"
+url_api = "https://api.github.com/repos/yannh/kubeconform/releases/assets/438612665"
+
+[[tools.opentofu]]
+version = "1.12.6"
+backend = "aqua:opentofu/opentofu"
+specifiers = ["1.12.6"]
+
+[tools.opentofu."platforms.linux-arm64"]
+checksum = "sha256:9bd0228a81bcd0c88f7045c74378f45a815779f19897191dff7d9efba9976b9e"
+url = "https://github.com/opentofu/opentofu/releases/download/v1.12.6/tofu_1.12.6_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/opentofu/opentofu/releases/assets/520762688"
+
+[tools.opentofu."platforms.linux-arm64-musl"]
+checksum = "sha256:9bd0228a81bcd0c88f7045c74378f45a815779f19897191dff7d9efba9976b9e"
+url = "https://github.com/opentofu/opentofu/releases/download/v1.12.6/tofu_1.12.6_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/opentofu/opentofu/releases/assets/520762688"
+
+[tools.opentofu."platforms.linux-x64"]
+checksum = "sha256:50a6106fa4de523d09c87af85f3db1dd47535fc005727fdca6852146476b88ec"
+url = "https://github.com/opentofu/opentofu/releases/download/v1.12.6/tofu_1.12.6_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/opentofu/opentofu/releases/assets/520762723"
+
+[tools.opentofu."platforms.linux-x64-musl"]
+checksum = "sha256:50a6106fa4de523d09c87af85f3db1dd47535fc005727fdca6852146476b88ec"
+url = "https://github.com/opentofu/opentofu/releases/download/v1.12.6/tofu_1.12.6_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/opentofu/opentofu/releases/assets/520762723"
+
+[tools.opentofu."platforms.macos-arm64"]
+checksum = "sha256:f958ec5e511063be9feb180ca015a4cb7977566a9cf6a8550bba8c2a9b5aba74"
+url = "https://github.com/opentofu/opentofu/releases/download/v1.12.6/tofu_1.12.6_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/opentofu/opentofu/releases/assets/520762710"
+
+[tools.opentofu."platforms.macos-x64"]
+checksum = "sha256:44bb1855f372f17f365fb94517906e78da5001da10f4c98de57a39bf982f3a92"
+url = "https://github.com/opentofu/opentofu/releases/download/v1.12.6/tofu_1.12.6_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/opentofu/opentofu/releases/assets/520762655"
+
+[tools.opentofu."platforms.windows-x64"]
+checksum = "sha256:bcbcd9ca744af6c4053e2d5e75dae79ff33ad7dc38d45e1233e693d096284538"
+url = "https://github.com/opentofu/opentofu/releases/download/v1.12.6/tofu_1.12.6_windows_amd64.tar.gz"
+url_api = "https://api.github.com/repos/opentofu/opentofu/releases/assets/520762708"
