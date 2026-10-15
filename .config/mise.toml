@@ -1,6 +1,11 @@
 [tools]
+actionlint = "1.7.12" #TODO: actionlint is deprecated: jactionlint is an actively maintained fork of actionlint with upstream fixes merged.
+checkov = "3.3.29"
 go = "1.27.1"
 golangci-lint = "2.14.0"
+infracost = "0.10.46"
+kubeconform = "0.8.0"
+opentofu = "1.12.6"
 
 [tasks.lint]
 run = "golangci-lint run"
